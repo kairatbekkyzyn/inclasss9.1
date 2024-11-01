@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzBuzz</title>
+    <title>JavaScript Event Handling</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>FizzBuzz</h1>
-    <div id="output"></div>
-    <script>
-        const outputDiv = document.getElementById("output");
-        
-        for (let i = 1; i <= 100; i++) {
-            let output = "";
-            if (i % 3 === 0 && i % 5 === 0) {
-                output = "FizzBuzz";
-            } else if (i % 3 === 0) {
-                output = "Fizz";
-            } else if (i % 5 === 0) {
-                output = "Buzz";
-            } else {
-                output = i;
-            }
-            
-            const p = document.createElement("p");
-            p.textContent = output;
-            outputDiv.appendChild(p);
-        }
-    </script>
+    <h1>JavaScript Event Handling Examples</h1>
+
+    <!-- Task 1: Average Marks and Grades -->
+    <h2>Student Grades</h2>
+    <table id="gradesTable" border="1">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Alice</td><td>85</td></tr>
+            <tr><td>Bob</td><td>75</td></tr>
+            <tr><td>Charlie</td><td>90</td></tr>
+            <tr><td>David</td><td>55</td></tr>
+            <tr><td>Eve</td><td>100</td></tr>
+        </tbody>
+    </table>
+    <button id="calculateGradesButton">Calculate Grades</button>
+    <div id="averageResult"></div>
+
+    <!-- Task 2: Keydown Event Listener -->
+    <label for="textInput">Type something and press Enter:</label>
+    <input type="text" id="textInput" />
+
+    <!-- Task 3: Double Click Event Listener -->
+    <div id="doubleClickArea" class="clickable-area">Double-click me!</div>
+
+    <!-- Task 4: Progress Bar -->
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <button id="completeTaskButton">Complete Task</button>
+
+    <!-- Task 5: FizzBuzz -->
+    <h2>FizzBuzz Results</h2>
+    <div id="fizzBuzzResult"></div>
+
+    <script src="inclass.js"></script>
 </body>
 </html>
